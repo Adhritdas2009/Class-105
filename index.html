@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Class 103</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body class="bg-warning">
+        <center>
+            <h1 class="bg-info heading">Image Recognition Web Application</h1>
+            <br>
+            <h2 class="bg-success heading" >Model is trained to identify the following objects</h2>
+            <br>
+            <label class="bg-danger heading"> Pen | Calculator | Ball | Boat | Pen holder | Sharpener | Book | Phone | Bottle | Headphone </label>
+            <br><br>
+            <div id="camera"></div>
+            <br>
+            <div id="result"></div>
+            <br>
+            <button onclick="cap()" class="btn btn-info">Capture Image</button><br>
+            <br>
+            <button onclick="ident()" class="btn btn-success">Identify Image</button>
+            <br>
+            <h4>Object: <span id="object_identify"></span></h4>
+            <br>
+            <h4>Accuracy: <span id="accurate"></span></h4>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>

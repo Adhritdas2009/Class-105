@@ -1,0 +1,11 @@
+#camera{
+    width: 300px;
+    height: 300px;
+    border: 3px ridge silver;
+}
+
+.heading{
+    width: 60%;
+    padding: 17px;
+    border-radius: 100px;
+}
